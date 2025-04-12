@@ -3,28 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>intro css</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Intro to CSS</title>
+
+    <!-- External CSS (Linked CSS file) -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Internal CSS (Within <style> tag in <head>) -->
     <style>
+      /* Tag Selector Example */
       span {
         font-size: 40px;
+        color: green;
+      }
+
+      /* Class Selector Example */
+      .container {
+        padding: 20px;
+        border: 2px solid black;
+        background-color: #f0f0f0;
+      }
+
+      /* ID Selector Example */
+      #title {
+        color: blue;
+        font-weight: bold;
+        font-size: 24px;
       }
     </style>
   </head>
+
   <body>
-    <!-- Inline CSS -->
+
+    <!-- Inline CSS (Directly inside HTML tag) -->
     <p style="background-color: brown; color: white">
-      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus,
-      dolorum.
+      This paragraph is styled using inline CSS.
     </p>
 
-    <span
-      >Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe,
-      voluptate!</span
-    >
+    <!-- Tag Selector Applied -->
+    <span>
+      This is a span element styled using internal tag selector.
+    </span>
 
+    <!-- ID Selector Applied -->
+    <h2 id="title">This is a heading with ID selector</h2>
+
+    <!-- Class Selector Applied -->
     <div class="container">
-
+      This div uses a class selector for styling.
     </div>
+
   </body>
 </html>
