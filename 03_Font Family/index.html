@@ -1,23 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online font family</title>
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Outfit:wght@100..900&display=swap" rel="stylesheet"> -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Online Font Family</title>
 
-<style>
+  <!-- Step 1: Import Google Fonts -->
+  <!-- You can use link OR @import, but not both together -->
+
+  <!-- Method 1: Link tag (Recommended for better performance) -->
+  <!-- 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+  -->
+
+  <!-- Method 2: Using @import inside <style> (Easy to use) -->
+  <style>
+    /* Importing Google Fonts */
     @import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Arrows:wght@400..700&family=Outfit:wght@100..900&display=swap');
 
-    p{
-        font-family: "Edu AU VIC WA NT Arrows", cursive;
-        font-optical-sizing: auto;
+    /* Applying imported font to <p> tag */
+    p {
+      font-family: "Edu AU VIC WA NT Arrows", cursive;
+      font-optical-sizing: auto; /* Optional property for Google variable fonts */
     }
-</style>
+  </style>
 </head>
 <body>
-    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis magnam velit ipsam unde inventore eligendi eveniet hic molestiae accusantium expedita commodi reprehenderit, enim odit veritatis voluptatem nihil tempora maxime. Quod, aut magni officia a accusamus dolorem fugiat, sed quos consectetur explicabo quibusdam porro quisquam quo, laborum aliquam facilis. Laudantium tempore assumenda alias velit, obcaecati cumque! Maiores a voluptas vitae commodi voluptatum perspiciatis provident, ratione repellendus mollitia autem non ut minima eos, tempore iste accusamus, illo optio qui laudantium quidem ab dolorum repudiandae voluptates? Blanditiis in atque nesciunt praesentium. Illo delectus ipsam, veritatis ullam velit quidem, minus quo ipsum, soluta amet aut ex eveniet accusamus temporibus! Eum odit, accusantium perspiciatis consequatur laboriosam repellat quaerat assumenda. Distinctio dolorem illo harum, consequuntur fugiat ipsa, ab sed dolor vitae dolores consequatur culpa est expedita corrupti rerum modi iste maiores? Voluptatem, iure. Sed nobis, a dolorum aliquam modi at ratione doloremque nesciunt tempora corrupti, aspernatur error distinctio odio perferendis unde ipsa facilis! Autem cupiditate tempore accusantium, eligendi impedit ipsa sit quis culpa necessitatibus dolorum quas non totam ea optio nihil voluptatem officiis, harum expedita recusandae deleniti blanditiis magni? Neque blanditiis vel, voluptas optio, illum rerum officiis vero aperiam tempore sit omnis. Saepe, nostrum! Quaerat, incidunt.</p>
+
+  <!-- Paragraph using online font family -->
+  <p>
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis magnam velit ipsam unde inventore eligendi eveniet hic molestiae...
+  </p>
+
 </body>
 </html>
