@@ -1,159 +1,98 @@
-# **Fonts & Icons Attachment**
+#### **1. Basic HTML Structure:**
 
-**Topics Covered:**
-
-- Font Attachment (Offline)
-- Icon Attachment using IcoMoon
-- Remix Icon Attachment
-- Practice Example using Fonts and Icons
-
----
-
-## Fonts Attachment (Offline Method)
-
-Fonts define the overall look and readability of our webpage content. Instead of using system-default fonts like Arial or Times New Roman, we can use custom fonts to make the design more attractive.
-
-### Steps for Offline Font Attachment:
-
-1. First, download a custom font from websites like:
-
-   - [Google Fonts](https://fonts.google.com)
-   - [DaFont](https://www.dafont.com)
-
-2. Place the downloaded font files (usually `.woff`, `.woff2`, or `.ttf`) inside a folder named `fonts` in your project directory.
-
-3. Use the `@font-face` rule in your `<style>` section to register the font.
-
-Example:
-
-```html
-<style>
-  @font-face {
-    font-family: "MyCustomFont";
-    src: url("fonts/myfont.woff2") format("woff2"), url("fonts/myfont.woff")
-        format("woff");
-  }
-
-  body {
-    font-family: "MyCustomFont", sans-serif;
-  }
-</style>
-```
-
-Points to remember:
-
-- Use multiple font formats for better browser support.
-- Always include a fallback font like `sans-serif` or `serif`.
-
----
-
-## Icon Attachment using IcoMoon (Offline)
-
-IcoMoon allows us to create our own icon sets and use them like fonts. These icons are lightweight and scalable.
-
-### Steps to Use IcoMoon Offline:
-
-1. Go to [IcoMoon App](https://icomoon.io/app)
-2. Select the icons you want and click on **Generate Font**
-3. Download the zip file and extract it
-4. Place the `style.css` file and `fonts` folder into your project
-
-Now include the CSS file in your HTML and use icon class names directly.
-
-Example:
-
-```html
-<head>
-  <link rel="stylesheet" href="icomoon/style.css" />
-</head>
-<body>
-  <i class="icon-home"></i>
-  <p class="icon-user">Welcome</p>
-</body>
-```
-
-The `icon-home` or `icon-user` classes are defined in the IcoMoon CSS file.
-
----
-
-## Remix Icon Attachment (Using CDN)
-
-Remix Icon is an open-source icon library available through CDN. It's very easy to integrate in web projects.
-
-### Steps to Use Remix Icon:
-
-1. Add the CDN link inside the `<head>` section of your HTML file
-
-```html
-<link
-  href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
-  rel="stylesheet"
-/>
-```
-
-2. Use icon class names directly in the HTML
-
-Example:
-
-```html
-<i class="ri-home-line"></i> <i class="ri-user-fill"></i>
-```
-
-You can explore more icons and class names here: [Remix Icon Official Website](https://remixicon.com)
-
----
-
-## Practice Example – Font and Icon Attachment Together
-
-This example uses:
-
-- Offline custom font for headings and paragraph
-- IcoMoon icons for contact
-- Remix icons for user and home
-
-```html
-<!DOCTYPE html>
-<html>
+- **HTML Document:**
+  ```html
+  <!DOCTYPE html>
+  <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <title>Font and Icon Example</title>
-
-    <!-- Offline Font -->
-    <style>
-      @font-face {
-        font-family: "MyFont";
-        src: url("fonts/myfont.woff2") format("woff2");
-      }
-      body {
-        font-family: "MyFont", sans-serif;
-      }
-    </style>
-
-    <!-- IcoMoon Icon CSS -->
-    <link rel="stylesheet" href="icomoon/style.css" />
-
-    <!-- Remix Icon CDN -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css"
-      rel="stylesheet"
-    />
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document Title</title>
   </head>
   <body>
-    <h1><i class="ri-home-line"></i> Welcome to My Page</h1>
-    <p>This text is displayed using an offline custom font.</p>
-
-    <p><i class="icon-phone"></i> Call us at: +91-9999999999</p>
-    <p><i class="ri-user-fill"></i> User Profile</p>
+      <!-- Visible content goes here -->
   </body>
-</html>
-```
+  </html>
+  ```
 
 ---
 
-## Note:
+#### **2. Icons with Font Awesome:**
 
-- Use **offline fonts** when you want full control and when working without internet access.
-- Use **IcoMoon** if you want to create custom icon packs that are lightweight and offline.
-- Use **Remix Icon** for quick integration using internet-based CDN.
+- **Link Font Awesome:**
+  - Add the following link in the `<head>` section to use Font Awesome icons:
+  ```html
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+  ```
 
-Both offline and online methods are important depending on the project need. Practice both to become comfortable with each approach.
+- **Icon Size:**
+  - Use custom CSS to set the icon size:
+  ```css
+  .fa-brands {
+      font-size: 30px;
+  }
+  ```
+
+- **Display Icons:**
+  - Use the `<i>` tag with specific classes for each icon:
+  ```html
+  <i class="fa-brands fa-github"></i>  <!-- GitHub Icon -->
+  <i class="fa-brands fa-youtube"></i>  <!-- YouTube Icon -->
+  ```
+
+---
+
+#### **3. Image Icons:**
+
+- **Image as Icon:**
+  - Use the `<img>` tag to add an image icon with specified width and height:
+  ```html
+  <img src="iconimg/download-solid.svg" width="50px" height="50px" alt="Download Icon">
+  ```
+
+- **SVG:**
+  - You can directly use inline SVG code for custom icons:
+  ```html
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" width="24px" fill="#1f1f1f">
+      <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/>
+  </svg>
+  ```
+
+---
+
+#### **4. Custom Fonts:**
+
+- **External CSS:**
+  - You can link an external CSS file for font styles:
+  ```html
+  <link rel="stylesheet" href="externalCss/stylesheet.css" />
+  ```
+
+- **Custom Font:**
+  - Apply a custom font to a paragraph using CSS:
+  ```css
+  .para {
+      font-family: "Sakitu Baelah Clean";
+  }
+  ```
+  ```html
+  <p class="para">Lorem ipsum dolor sit amet...</p>
+  ```
+
+---
+
+#### **5. Favicon:**
+
+- **Link Favicon:**
+  - To display a favicon in the browser tab, add this in the `<head>` section:
+  ```html
+  <link rel="icon" href="favican/reshot-icon-game-ZU836T7Q4H.svg">
+  ```
+
+---
+
+### Note:
+1. **Font Awesome Icons**: Easily integrate social media icons like GitHub and YouTube with just a few lines of code.
+2. **Image Icons**: Use `<img>` or inline SVGs for custom icons.
+3. **Custom Fonts**: Apply a specific font to elements with CSS.
+4. **Favicon**: Display an icon in the browser tab using the `<link>` tag.
