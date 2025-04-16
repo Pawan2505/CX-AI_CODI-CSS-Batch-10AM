@@ -1,0 +1,10 @@
+.container{
+    width: 200px;
+    height: 200px;
+    border: 1px;
+    border-color: red;
+    border-radius: 50%;
+    /* border-style:dotted ; */
+    border-style: solid;
+    border-top: 1px solid green;
+}

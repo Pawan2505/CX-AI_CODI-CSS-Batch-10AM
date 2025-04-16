@@ -1,0 +1,23 @@
+.container{
+   height: 500px;
+   border: 2px solid black;
+   background-color: lightblue;
+   /* padding-top: 200px;
+   padding-left: 300px;
+   padding-bottom: 100px;
+   padding-right: 200px; */
+
+   padding: 100px 300px 200px 200px;
+   
+}
+
+#box{
+   width: 50%;
+   height: 50%;
+   border: 2px solid red;
+   /* margin-top: 100px;
+   margin-left: 400px;
+   margin-right: 100px;
+   margin-bottom: 100px; */
+   /* margin: 100px 200px 300px 400px; */
+}
