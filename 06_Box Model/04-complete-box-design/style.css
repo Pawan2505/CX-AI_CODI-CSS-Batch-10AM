@@ -1,0 +1,19 @@
+.container {
+    background-color: #f0f8ff;
+    padding: 50px;
+    border: 2px dashed #999;
+    margin: 40px;
+}
+
+.box {
+    width: 300px;
+    height: 200px;
+    background-color: #ffebcd;
+    padding: 20px;
+    margin: 30px auto;
+    border: 3px solid #8b0000;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 160px;
+    font-weight: bold;
+}
