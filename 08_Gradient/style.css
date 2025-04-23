@@ -1,0 +1,84 @@
+/* .linear-gradient{
+    height: 400px;
+    border: 1px solid black;
+    background: linear-gradient(orange 19%, red 32%, green 59%, yellow);
+    color: white;
+} */
+
+/* .linear-gradient{
+    height: 400px;
+    border: 1px solid black;
+    background: linear-gradient(to right,orange 19%, red 32%, green 59%, yellow);
+    color: white;
+} */
+
+/* .linear-gradient{
+    height: 400px;
+    border: 1px solid black;
+    background: linear-gradient(45deg,orange 19%, red 32%, green 59%, yellow);
+    color: white;
+} */
+
+/* .radial-gradient{
+    height: 400px;
+    border: 1px solid black;
+    background: radial-gradient(orange , red , green, yellow);
+    color: white;
+} */
+
+
+
+/* .radial-gradient{
+    height: 400px;
+    border: 1px solid black;
+     background: radial-gradient(orange 28%, red 50%, green 46%, yellow);
+    color: white;
+} */
+
+/* .radial-gradient{
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-image: radial-gradient(circle, red 45%, yellow 62%, green 30%);
+
+    color: white;
+} */
+
+/* .radial-gradient{
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    border: 1px solid black;
+  background-image: radial-gradient(closest-side at 60% 30% , red, yellow, black);
+
+    color: white;
+}  */
+  /* .radial-gradient{
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-image: radial-gradient(farthest-side at 60% 55%, red, yellow, black);
+    color: white;
+}  */
+
+  /* .radial-gradient{
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    border: 1px solid black;
+      background-image:conic-gradient(red 38%, yellow, green);
+    color: white;
+}  */
+
+  /* .radial-gradient{
+    width: 600px;
+    height: 600px;
+    border-radius: 50%;
+    border: 1px solid black;
+      background-image:conic-gradient(red 45deg, yellow 90deg, green 210deg);
+    color: white;
+}  */
+
+
