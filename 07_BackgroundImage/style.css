@@ -1,11 +1,16 @@
-.container{
+.container {
     width: 600px;
     height: 500px;
     border: 2px solid black;
     margin: 100px auto;
+
+    /* Background Image */
     background-image: url("images/Wallpaper.jpeg");
-    background-size: 600px 500px;
+    background-size: 600px 500px; /* Exact fit */
     background-repeat: no-repeat;
+
+    /* Text Styling */
     color: white;
     font-size: 30px;
+    padding: 20px; /* Adds spacing around the text */
 }

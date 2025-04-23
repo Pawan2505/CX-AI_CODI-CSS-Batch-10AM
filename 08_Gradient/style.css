@@ -1,84 +1,95 @@
-/* .linear-gradient{
+/* LINEAR GRADIENTS */
+
+/* Top to bottom gradient */
+.linear-gradient-vertical {
     height: 400px;
     border: 1px solid black;
     background: linear-gradient(orange 19%, red 32%, green 59%, yellow);
     color: white;
-} */
+}
 
-/* .linear-gradient{
+/* Left to right gradient */
+.linear-gradient-horizontal {
     height: 400px;
     border: 1px solid black;
-    background: linear-gradient(to right,orange 19%, red 32%, green 59%, yellow);
+    background: linear-gradient(to right, orange 19%, red 32%, green 59%, yellow);
     color: white;
-} */
+}
 
-/* .linear-gradient{
+/* Diagonal 45 degree gradient */
+.linear-gradient-angled {
     height: 400px;
     border: 1px solid black;
-    background: linear-gradient(45deg,orange 19%, red 32%, green 59%, yellow);
+    background: linear-gradient(45deg, orange 19%, red 32%, green 59%, yellow);
     color: white;
-} */
+}
 
-/* .radial-gradient{
+/* RADIAL GRADIENTS */
+
+/* Simple radial gradient from center */
+.radial-gradient-basic {
     height: 400px;
     border: 1px solid black;
-    background: radial-gradient(orange , red , green, yellow);
+    background: radial-gradient(orange, red, green, yellow);
     color: white;
-} */
+}
 
-
-
-/* .radial-gradient{
+/* Radial with specific percentage color stops */
+.radial-gradient-percentage {
     height: 400px;
     border: 1px solid black;
-     background: radial-gradient(orange 28%, red 50%, green 46%, yellow);
+    background: radial-gradient(orange 28%, red 50%, green 46%, yellow);
     color: white;
-} */
+}
 
-/* .radial-gradient{
+/* Circular radial gradient with border radius */
+.radial-gradient-circle {
     width: 600px;
     height: 600px;
     border-radius: 50%;
     border: 1px solid black;
-    background-image: radial-gradient(circle, red 45%, yellow 62%, green 30%);
-
+    background: radial-gradient(circle, red 45%, yellow 62%, green 30%);
     color: white;
-} */
+}
 
-/* .radial-gradient{
+/* Closest side positioned radial gradient */
+.radial-gradient-closest-side {
     width: 600px;
     height: 600px;
     border-radius: 50%;
     border: 1px solid black;
-  background-image: radial-gradient(closest-side at 60% 30% , red, yellow, black);
-
+    background: radial-gradient(closest-side at 60% 30%, red, yellow, black);
     color: white;
-}  */
-  /* .radial-gradient{
+}
+
+/* Farthest side positioned radial gradient */
+.radial-gradient-farthest-side {
     width: 600px;
     height: 600px;
     border-radius: 50%;
     border: 1px solid black;
-    background-image: radial-gradient(farthest-side at 60% 55%, red, yellow, black);
+    background: radial-gradient(farthest-side at 60% 55%, red, yellow, black);
     color: white;
-}  */
+}
 
-  /* .radial-gradient{
+/* CONIC GRADIENTS */
+
+/* Basic conic gradient without angles */
+.conic-gradient-basic {
     width: 600px;
     height: 600px;
     border-radius: 50%;
     border: 1px solid black;
-      background-image:conic-gradient(red 38%, yellow, green);
+    background: conic-gradient(red 38%, yellow, green);
     color: white;
-}  */
+}
 
-  /* .radial-gradient{
+/* Conic gradient with angle-based stops */
+.conic-gradient-angled {
     width: 600px;
     height: 600px;
     border-radius: 50%;
     border: 1px solid black;
-      background-image:conic-gradient(red 45deg, yellow 90deg, green 210deg);
+    background: conic-gradient(red 45deg, yellow 90deg, green 210deg);
     color: white;
-}  */
-
-
+}

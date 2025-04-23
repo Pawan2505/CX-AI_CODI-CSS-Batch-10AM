@@ -3,15 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Two Class Property Example</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <!-- Example 1: Single class used -->
+    <!-- This will apply font-size: 40px from .box1 class -->
     <!-- <div class="box1">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, enim?</p>
+        <p>This text will appear large due to .box1 styling</p>
     </div> -->
 
-    <h1 class="para1">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Necessitatibus exercitationem vel quis itaque quibusdam quos ipsam facere nisi porro quidem!</h1>
-    <p class="para2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ut eius fugit itaque vitae tempora sequi velit voluptatum in quo corporis delectus illum, cupiditate ullam, minima nihil consequuntur, reprehenderit laudantium?</p>
+    <!-- Example 2: Two elements using shared and individual class properties -->
+
+    <!-- .para1 and .para2 share a background-color through group selector -->
+    <!-- But .para1 also gets red color through a specific selector -->
+    
+    <h1 class="para1">
+        This heading has aqua background and red text.
+    </h1>
+
+    <p class="para2">
+        This paragraph has aqua background only (no text color defined).
+    </p>
+
 </body>
 </html>

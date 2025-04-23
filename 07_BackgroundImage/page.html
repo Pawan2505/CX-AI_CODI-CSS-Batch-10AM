@@ -3,40 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Background Image Hover Effect</title>
+
     <style>
-        .container{
-            /* margin-top: 100px; */
-            margin:50px auto;
+        /* ====== Main container with background image ====== */
+        .container {
+            margin: 50px auto;               /* center the div vertically with some margin */
             width: 800px;
             height: 600px;
-            /* border: 2px solid black; */
+
+            /* Background image settings */
             background-image: url("https://i.pinimg.com/474x/6e/0a/85/6e0a8509f16ae5505e0b5b8ad4e602b8.jpg");
             background-repeat: no-repeat;
-            /* background-size: cover; */
-            /* background-size: contain; */
-            /* background-size: auto; */
-            background-size: cover;
-            background-position: center;
-   
-            /* background-position: top left; */
-            /* background-position: top; */
-            /* background-position: bottom; */
-            /* background-clip: padding-box; */
-          
+            background-size: cover;          /* covers the full container */
+            background-position: center;     /* centers the image */
+
+            /* Optional: borders for testing */
+            /* border: 2px solid black; */
             /* border: 15px dotted black; */
         }
 
-            .container:hover{
-                transition: all 0.5s ease-in;
-                padding: 20px;
-                background-clip: content-box;
-            }
+        /* ====== On Hover Effect ====== */
+        .container:hover {
+            transition: all 0.5s ease-in;    /* smooth animation */
+            padding: 20px;                   /* adds padding (creates inner spacing) */
+            background-clip: content-box;    /* background applies only to content area */
+        }
     </style>
 </head>
-<body>
-    <div class="container">
 
+<body>
+
+    <!-- ====== Div with background image and hover effect ====== -->
+    <div class="container">
+        <!-- You can add text/content inside if needed -->
     </div>
+
 </body>
 </html>

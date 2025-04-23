@@ -1,11 +1,14 @@
-.box1{
-    font-size: 40px;
+/* class for font size */
+.box1 {
+    font-size: 40px;  /* Applies large font size */
 }
 
-.para1,.para2{
-    background-color: aqua
+/* Shared style for both .para1 and .para2 */
+.para1, .para2 {
+    background-color: aqua;  /* Aqua background for both */
 }
 
-.para1{
-    color: red;
+/* Specific style only for .para1 */
+.para1 {
+    color: red;  /* Red text color only for h1.para1 */
 }
