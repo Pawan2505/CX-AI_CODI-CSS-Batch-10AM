@@ -1,0 +1,44 @@
+.para1{
+    /* display: block; */
+    display: inline;
+}
+
+.data{
+/* display: inline; */
+display: block;
+}
+
+
+.conatiner{
+    display: flex;
+    /* gap: 40px; */
+    /* main-axis */
+    /* justify-content: center;  */
+    /* cross-axis */
+    align-items: center;
+/* margin: auto; */
+/* justify-content: space-between; */
+/* justify-content: space-around; */
+justify-content: space-evenly;
+    width: 60%;
+    height: 500px;
+    box-shadow: 0px 0px 10px gray;
+    /* padding: 50px; */
+}
+
+
+#box1{
+    width: 40%;
+    height: 300px;
+    border: 1px solid black;
+    /* display: inline-block; */
+}
+
+#box2{
+    width: 40%;
+    height: 300px;
+    border: 1px solid black;
+    /* display: inline-block; */
+    /* display: none; */
+}
+
