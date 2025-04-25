@@ -1,0 +1,52 @@
+.container{
+    box-shadow: 0 0 10px gray;
+    height: 500px;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.headphone{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.headphone-details{
+    width: 60%;
+}
+
+.radio-section{
+    display: flex;
+    gap: 30px;
+}
+
+.radio1,.radio2,.radio3{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.radio1{
+    background-color: red;
+}
+.radio2{
+    background-color: green;
+}
+.radio3{
+    background-color: yellow;
+}
+.headphone-image{
+    width: 350px;
+    height: 300px;text-align: center;
+}
+
+button{
+    padding: 10px 20px;
+    margin-right: 20px;
+}
