@@ -1,0 +1,30 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: black;
+    color: white;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+.menu{
+    display: flex;
+}
+
+.menu-list{
+    margin-right: 50px;
+    list-style: none;
+    font-size: 18px;
+    cursor: pointer;
+}

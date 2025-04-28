@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.student-form{
+    box-shadow: 0 0 10px gray;
+    padding: 50px;
+    position: relative;
+    top: 100px;
+    left: 30%;
+    width: 40%;
+    text-align: center;
+}
+
+h2{
+    font-size: 32px;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    color: green;
+}
+
+input{
+    width: 80%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+button{
+       width: 80%;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: gray;
+    color: white
+}
+
+button:hover{
+    background-color: rgb(29, 28, 28);
+}

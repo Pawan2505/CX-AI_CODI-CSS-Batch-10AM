@@ -1,0 +1,86 @@
+
+.translate-container{
+    width: 80%;
+    margin: 100px auto;
+    height: 500px;
+    border: 2px solid green;
+    padding: 50px;
+}
+
+.move{
+    width: 100px;
+    height: 100px;
+    border: 1px solid blueviolet;
+    background-color: blue;
+    /* transition-duration: 10s;
+    transition-delay: 1s;
+    transition-timing-function: ease; */
+
+      
+}
+
+.move:hover{
+    transition: all 2s ease 1s;
+    /* transform: translateX(500px); */
+    /* transform: translateY(300px); */
+    /* transform: translate3d(500px,400px,100px); */
+    transform: translateX(800px);
+}
+
+.container{
+    width: 80%;
+    margin: 50px;
+    border: 2px solid black;
+    height: 600px;
+    padding: 100px;
+    box-sizing: border-box;
+    display: flex;
+    gap: 100px;
+}
+
+.box{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+     transition: all 1s ease 0.2s;
+}
+
+.box1{
+background-color: red;
+ /* transition: all 2s ease 1s; */
+}
+
+.box1:hover{
+    /* transform: scale(2); */
+    /* transform: scaleX(1.5); */
+    /* transform: scaleY(2.5); */
+    transform: scale(2);
+}
+
+.box2{
+background-color: green;
+}
+
+.box2:hover{
+    transform: rotate(270deg);
+    /* transform: rotateX(75deg); */
+    /* transform: rotateY(120deg); */
+}
+
+.box3{
+background-color: yellow;
+}
+
+.box3:hover{
+/* transform: skew(120deg); */
+/* transform: skewX(120deg); */
+transform: skewY(120deg);
+}
+
+.box4{
+background-color: orange;
+}
+
+.box5{
+background-color: pink;
+}

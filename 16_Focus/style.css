@@ -1,0 +1,15 @@
+.input-box:focus{
+background-color: red;
+color: white;
+/* border: 1px dotted black; */
+
+}
+
+.input-box{
+outline-style: dotted;
+}
+
+a:focus{
+color: lightblue;
+text-decoration: none;
+}
