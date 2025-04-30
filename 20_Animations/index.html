@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WOW.js Animation Reset</title>
+
+  <!-- Animate.css (v4) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+  <style>
+    body {
+      padding: 30px;
+    }
+    .wow {
+      margin: 50px;
+      padding: 20px;
+      background-color: #f0f0f0;
+      display: inline-block;
+      font-size: 18px;
+    }
+    .reset {
+      position: fixed;
+      right: 10px;
+      top: 10px;
+      padding: 15px 30px;
+    }
+  </style>
+</head>
+<body>
+  <button class="reset">Reset</button>
+  <div id="animatedBox" class="wow animate__animated animate__bounceInUp">Content to Reveal Here</div>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- WOW.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+  <script>
+    new WOW().init();
+
+    $('.reset').click(function () {
+      const $box = $('#animatedBox');
+
+      // Remove animation classes
+      $box.removeClass('animate__animated animate__bounceInUp');
+
+      // Trigger reflow to force browser to register the change
+      void $box[0].offsetWidth;
+
+      // Re-add animation classes to play again
+      $box.addClass('animate__animated animate__bounceInUp');
+    });
+  </script>
+</body>
+</html>
