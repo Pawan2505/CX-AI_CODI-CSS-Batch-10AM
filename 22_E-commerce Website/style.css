@@ -101,7 +101,20 @@
     }
      }
 
-    
+}
 
+.product-intro{
+    display: flex;
+    justify-content: space-around;
+    background-color: gray;
+    padding: 100px;
 
+    .video-container{
+        width: 40%;
+        text-align: center;
+    }
+
+    .product-details{
+        width: 50%;
+    }
 }
